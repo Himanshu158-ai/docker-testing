@@ -14,11 +14,12 @@ app.get("/health", (req, res) => {
     });
 });
 
-app.get("/test",(req,res)=>{
+app.get("/users",(req,res)=>{
+    
     res.status(200).json({
-        message: "test",
+        message: "users",
         timestamp: new Date().toISOString(),
     });
-});
+})
 
 export default app;
